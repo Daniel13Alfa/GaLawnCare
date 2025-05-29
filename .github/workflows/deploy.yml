@@ -3,7 +3,7 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # O la rama que uses
+      - main
 
 jobs:
   deploy:
@@ -19,6 +19,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Set Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy
         run: npm run deploy
