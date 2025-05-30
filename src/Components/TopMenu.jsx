@@ -29,11 +29,11 @@ function TopMenu() {
             </div>
 
             {/* Navegación grande */}
-            <nav className="hidden md:flex space-x-6">
+            <nav className="hidden md:flex ">
               <NavLink to="/" className={navLinkClass}>Home</NavLink>
               <NavLink to="/about" className={navLinkClass}>About Us</NavLink>
               <NavLink to="/services" className={navLinkClass}>Services</NavLink>
-              <NavLink to="/contact" className={navLinkClass}>Contact</NavLink>
+              <NavLink to="/contactUs" className={navLinkClass}>Contact</NavLink>
             </nav>
 
             {/* Botón hamburguesa */}
@@ -85,7 +85,7 @@ function TopMenu() {
             <NavLink to="/" className={navLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Home</NavLink>
             <NavLink to="/about" className={navLinkClass} onClick={() => setIsMobileMenuOpen(false)}>About Us</NavLink>
             <NavLink to="/services" className={navLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Services</NavLink>
-            <NavLink to="/contact" className={navLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Contact</NavLink>
+            <NavLink to="/contactUs" className={navLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Contact</NavLink>
           </nav>
         </div>
       </div>
