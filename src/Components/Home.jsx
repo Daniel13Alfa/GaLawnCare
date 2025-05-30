@@ -6,15 +6,15 @@ import TailwindCarousel from './TailwindCarousel';
 function Home() {
     return (
         <div>
-            <div className="flex justify-center pb-5">
+            <div className="flex justify-center pb-5 relative">
                 <div className="w-full flex justify-center">
                     <img
                     src={houseHome}
                     alt="Ga Lawn Care"
-                    className="h-120 md:h-160 w-10/12 md:w-12/15 max-w-screen-xl"
+                    className="h-120 md:h-160 w-10/12 md:w-12/15 max-w-screen-xl block"
                     />
                 </div>
-                
+                <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
             </div>
             <div className='w-screen'>
                 <div className='mx-auto md:w-12/15 flex flex-col md:flex-row'>
