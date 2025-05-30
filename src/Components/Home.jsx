@@ -14,7 +14,7 @@ function Home() {
                     className="h-120 md:h-160 w-10/12 md:w-12/15 max-w-screen-xl"
                     />
                 </div>
-                <div className="absolute bottom-0 left-0 w-full h-25 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+                
             </div>
             <div className='w-screen'>
                 <div className='mx-auto md:w-12/15 flex flex-col md:flex-row'>
