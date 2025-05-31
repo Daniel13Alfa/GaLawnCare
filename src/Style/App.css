@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.inputC {
+    border: 1px solid #D1D5DB;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    outline: none;
+}
+
+.inputC:focus {
+    border-color: #22C55E;
+    box-shadow: 0 0 0 1px #22C55E;
+}
