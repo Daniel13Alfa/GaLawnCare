@@ -1,7 +1,32 @@
 import '../Style/App.css'
 import { useState } from 'react';
+import CustomSelect from './UI/CustomSelect';
+
+const projectOptions = [
+  { label: "Maintenance", value: "maintenance" },
+  { label: "Design", value: "design" },
+  { label: "Irrigation", value: "irrigation" },
+];
+
+const socialtOptions = [
+  { label: "Google", value: "Google" },
+  { label: "Facebook", value: "Facebook" },
+  { label: "Instagram", value: "Instagram" },
+  { label: "Friend", value: "Friend" },
+];
 
 function ContactUs(){
+  //project options value
+  const [projectType, setProjectType] = useState("");
+  const handleProjectChange = (value) => {
+    setProjectType(value);
+  };
+  //how did you hear about us
+  const [social, setSocial]= useState("")
+  const handleSocial = (value) => {
+    setSocial(value);
+  }
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,18 +65,8 @@ function ContactUs(){
           <input type="text" name="zip" placeholder="Zip Code" className="inputC" onChange={handleChange} />
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <select name="referral" className="input" onChange={handleChange} required>
-            <option value="">How did you hear about us?</option>
-            <option value="Google">Google</option>
-            <option value="Facebook">Facebook</option>
-            <option value="Friend">Friend</option>
-          </select>
-          <select name="projectType" className="input" onChange={handleChange} required>
-            <option value="">Type of Projects</option>
-            <option value="Maintenance">Maintenance</option>
-            <option value="Design">Design</option>
-            <option value="Irrigation">Irrigation</option>
-          </select>
+          <CustomSelect options={socialtOptions} labelSelect="How did you hear about us" onChange={handleSocial}/>
+          <CustomSelect options={projectOptions} labelSelect="Type of Projects" onChange={handleProjectChange} />
         </div>
         <textarea name="message" placeholder="Tell us about your project" className="inputC" onChange={handleChange}></textarea>
         <button type="submit" className="block mx-auto bg-green-700 text-white px-6 py-2 rounded hover:bg-green-700 cursor-pointer">Send</button>

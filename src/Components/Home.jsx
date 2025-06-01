@@ -1,7 +1,6 @@
 import '../Style/App.css';
 import houseHome from '../assets/Images/HouseHome.png';
-import Footer from './Footer';
-import TailwindCarousel from './TailwindCarousel';
+import TailwindCarousel from './UI/TailwindCarousel';
 
 function Home() {
     return (
