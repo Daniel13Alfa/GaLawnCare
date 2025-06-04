@@ -65,7 +65,7 @@ function ContactUs(){
           <input type="text" name="zip" placeholder="Zip Code" className="inputC" onChange={handleChange} />
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <CustomSelect options={socialtOptions} labelSelect="How did you find us?" onChange={handleSocial}/>
+          <CustomSelect options={socialtOptions} labelSelect="How found" onChange={handleSocial}/>
           <CustomSelect options={projectOptions} labelSelect="Type of Projects" onChange={handleProjectChange} />
         </div>
         <textarea name="message" placeholder="Tell us about your project" className="inputC" onChange={handleChange}></textarea>

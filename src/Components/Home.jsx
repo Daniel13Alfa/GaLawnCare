@@ -11,7 +11,7 @@ function Home() {
                     <img
                     src={houseHome}
                     alt="Ga Lawn Care"
-                    className="h-120 md:h-160 w-10/12 md:w-12/15 max-w-screen-xl block"
+                    className="h-100 md:h-160 w-13/15 md:w-12/15 max-w-screen-xl block"
                     />
                 </div>
                 <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
