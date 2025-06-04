@@ -55,7 +55,7 @@ function ContactUs(){
   return(
     <div className=''>
       <h1 className='text-center text-4xl pt-5'>Request A Quote</h1>
-      <form onSubmit={handleSubmit} className="mt-10 max-w-2xl mx-auto p-6 space-y-4 bg-white rounded shadow">
+      <form onSubmit={handleSubmit} className="mt-10 max-w-2xl mx-auto p-5 space-y-4 bg-white rounded shadow">
         <div className="grid grid-cols-2 gap-4">
           <input type="text" name="name" placeholder="Name *" className="inputC" onChange={handleChange} required />
           <input type="text" name="phone" placeholder="Phone Number *" className="inputC" onChange={handleChange} required />
@@ -65,7 +65,7 @@ function ContactUs(){
           <input type="text" name="zip" placeholder="Zip Code" className="inputC" onChange={handleChange} />
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <CustomSelect options={socialtOptions} labelSelect="How did you hear about us" onChange={handleSocial}/>
+          <CustomSelect options={socialtOptions} labelSelect="How did you find us?" onChange={handleSocial}/>
           <CustomSelect options={projectOptions} labelSelect="Type of Projects" onChange={handleProjectChange} />
         </div>
         <textarea name="message" placeholder="Tell us about your project" className="inputC" onChange={handleChange}></textarea>

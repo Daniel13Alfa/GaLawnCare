@@ -1,10 +1,11 @@
 import '../Style/App.css';
+import '../Style/Font.css'
 import houseHome from '../assets/Images/HouseHome.png';
 import TailwindCarousel from './UI/TailwindCarousel';
 
 function Home() {
     return (
-        <div>
+        <div className='pb-5'>
             <div className="flex justify-center pb-5 relative">
                 <div className="w-full flex justify-center">
                     <img
@@ -14,6 +15,9 @@ function Home() {
                     />
                 </div>
                 <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-center py-2 rounded max-w-[90%]">
+                    <p className="fontLora text-lg  md:text-3xl text-gray-100">We care for your garden like it’s our own.</p>
+                </div>            
             </div>
             <div className='w-screen'>
                 <div className='mx-auto md:w-12/15 flex flex-col md:flex-row'>

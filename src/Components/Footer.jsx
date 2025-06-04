@@ -5,7 +5,7 @@ import { Twitter } from 'lucide-react';
 
 function Footer() {
     return (
-        <footer className="bg-green-900 text-white mt-16 text-center w-screen pb-4 pt-4">
+        <footer className="bg-green-900 text-white text-center w-screen pb-4 pt-4">
             <div className='w-screen flex  justify-center space-x-1'>
                 <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/ga_lawn_care_services_llc?igsh=N3J2N20xbHpncGJv'><Instagram/></a>
                 <a><Facebook/></a>
