@@ -24,9 +24,10 @@ const services = [
   },
 ]
 
-function Services() {
-  return (
-    <section className="bg-white py-16 px-4 md:px-8">
+function Services(){
+    return(
+        <div>
+            <section className="bg-white py-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Services</h2>
         <p className="text-gray-500 mb-12 max-w-2xl mx-auto">
@@ -35,10 +36,7 @@ function Services() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition duration-300"
-            >
+            <div key={index} className="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition">
               <div className="flex justify-center mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold text-gray-700 mb-2">{service.title}</h3>
               <p className="text-gray-500 text-sm">{service.description}</p>
@@ -47,7 +45,7 @@ function Services() {
         </div>
       </div>
     </section>
-  )
+        </div>
+    );
 }
-
-export default Services
+export default Services;
